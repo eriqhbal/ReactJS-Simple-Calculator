@@ -102,6 +102,7 @@ function evaluate({ currentOperand, previousOperand, operator }) {
 
   if (isNaN(prev) || isNaN(curr)) return "";
 
+  // eslint-disable-next-line default-case
   switch (operator) {
     case "+":
       result = prev + curr;
